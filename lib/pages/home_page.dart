@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:solar_power/models/checkbox_list_model.dart';
-import 'package:solar_power/pages/objects_page.dart';
+import 'package:solar_power/pages/datos_electrodomesticos_page.dart';
+import 'package:solar_power/routes/routes.dart';
 import 'package:solar_power/styles/my_icons.dart';
 
 class HomePage extends StatefulWidget {
@@ -35,7 +37,7 @@ class _HomePageState extends State<HomePage> {
             style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),
           ),
           onPressed: () {
-            Navigator.pushNamed(context, ObjectsPage.pageName);
+            Navigator.pushNamed(context, Routes.datosElectrodomesticos);
           }),
       backgroundColor: backgroundColor,
       body: SafeArea(
